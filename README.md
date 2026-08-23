@@ -1,4 +1,3 @@
-=======
 # CSC530 Monsoon 2026 — Group 4
 
 ## Inquiry-Based Commerce Mentor
