@@ -1,0 +1,37 @@
+Partnership Accounts
+
+A partnership is a relationship between persons who have agreed to share the
+profits of a business carried on by all, or by any of them acting for all. A
+partnership deed is a written agreement among partners that typically records
+the profit-sharing ratio, the rate of interest to be allowed on capital and
+charged on drawings, salary or commission payable to partners, and the
+treatment of interest on loans given by a partner to the firm. If no deed
+exists, or the deed is silent on a matter, the Indian Partnership Act's
+default rules apply: profits/losses are shared equally, no interest is
+allowed on capital, no interest is charged on drawings, no partner is
+entitled to a salary, and interest on a partner's loan to the firm is allowed
+at 6% per annum.
+
+Partners' capital can be maintained under two methods. Under the Fixed
+Capital Method, each partner has two accounts: a Capital Account (which
+remains fixed unless there is a permanent introduction or withdrawal of
+capital) and a Current Account (through which all other adjustments -- share
+of profit, interest on capital, drawings, interest on drawings, salary -- are
+routed). Under the Fluctuating Capital Method, only a single Capital Account
+is maintained per partner, and all these adjustments are made directly in
+that one account, so the capital balance fluctuates from year to year.
+
+A Profit and Loss Appropriation Account is prepared after the ordinary Profit
+and Loss Account, specifically to show how the net profit of a partnership is
+distributed among the partners -- accounting for interest on capital,
+salary/commission to partners, interest on drawings (added back), and finally
+the residual profit split in the agreed profit-sharing ratio.
+
+Admission of a new partner, retirement of an existing partner, and death of a
+partner are all "reconstitution" events that typically require: revaluation
+of assets and liabilities (through a Revaluation Account), adjustment of
+goodwill among the partners, and a fresh calculation of each remaining/new
+partner's capital and new profit-sharing ratio. Goodwill, in this context, is
+the value of a firm's reputation that entitles it to earn higher profits than
+a comparable new firm; a common valuation approach is the average profit
+method or the super profit method.

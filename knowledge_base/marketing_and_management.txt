@@ -1,0 +1,45 @@
+Marketing and Principles of Management (Class 12)
+
+Marketing management involves planning, organising, directing and
+controlling the activities that facilitate the exchange of goods and
+services between producers and consumers, guided by the marketing mix -- the
+"4 Ps": Product (design, features, quality, branding, packaging), Price
+(the amount charged, influenced by cost, competition, and perceived value),
+Place/Physical distribution (channels used to make the product available to
+customers), and Promotion (advertising, personal selling, sales promotion,
+and public relations used to inform and persuade customers).
+
+A distribution channel is the path through which goods move from the
+producer to the final consumer; it can be a direct channel (producer to
+consumer, with no intermediaries) or an indirect channel involving one or
+more intermediaries such as wholesalers and retailers, each performing
+functions like sorting, storing, and providing credit that would otherwise
+have to be performed by the producer or consumer.
+
+E-business refers to conducting business activities using electronic means,
+particularly the internet -- covering online buying and selling (e-commerce),
+online banking, digital marketing, and internal use of technology for
+communication, record-keeping, and coordination. Compared with traditional
+business, e-business can reduce costs of physical infrastructure and widen
+market reach, but it also raises distinct concerns such as data security,
+digital payment fraud, and building customer trust without face-to-face
+interaction.
+
+Principles of Management, particularly Henri Fayol's fourteen principles,
+provide broad guidelines for how a manager should perform their functions.
+Frequently referenced principles include Division of Work (specialisation
+improves efficiency), Unity of Command (each employee should receive
+instructions from one superior only, to avoid confusion), Unity of Direction
+(one plan, one head, for a group of activities having the same objective),
+Scalar Chain (the formal line of authority from the highest to the lowest
+rank, which may be shortened using a "gang plank" in urgent situations), and
+Esprit de Corps (promoting team spirit, since union is strength).
+
+The core functions of management taught at this level are Planning
+(deciding in advance what to do and how to do it), Organising (identifying
+and grouping activities, assigning them, and establishing authority
+relationships), Staffing (recruiting, selecting, training and developing
+people to fill organisational roles), Directing (supervising, motivating,
+leading and communicating with subordinates to get work done), and
+Controlling (setting standards, measuring actual performance, comparing it
+with the standard, and taking corrective action where there is a deviation).

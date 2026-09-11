@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Inquiry-Based Commerce Mentor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="ledger-page">
+
+    <header class="masthead">
+      <div class="masthead-left">
+        <h1>Inquiry-Based<br/>Commerce Mentor</h1>
+        <p class="subtitle">A RAG tutor grounded in NCERT XI&ndash;XII Commerce &mdash; Accountancy &amp; Business Studies</p>
+      </div>
+      <div class="masthead-right">
+        <div id="statusDot" class="status-pill status-unknown">
+          <span class="dot"></span><span id="statusText">checking system…</span>
+        </div>
+        <div class="mode-pill" id="modePill">NORMAL</div>
+      </div>
+    </header>
+
+    <div class="ledger-rule thick"></div>
+
+    <main class="workspace">
+
+      <aside class="side-column">
+        <h2>Modes</h2>
+        <button class="mode-btn" data-mode=":normal">Normal<span>plain grounded Q&amp;A</span></button>
+        <button class="mode-btn" data-mode=":tocd">TOCD<span>Task · Objective · Context · Deliverable</span></button>
+        <button class="mode-btn" data-mode=":rtao">RTAO<span>Identify → Engage → Analyze → Respond</span></button>
+        <button class="mode-btn" data-mode=":ultimate">Ultimate<span>Role · Context · Goal · Format · Eval</span></button>
+
+        <h2>Inquiry cycle</h2>
+        <ol class="inquiry-cycle">
+          <li>Observation</li>
+          <li>Question</li>
+          <li>Hypothesis</li>
+          <li>Experiment</li>
+          <li>Analysis</li>
+          <li>Conclusion</li>
+        </ol>
+
+        <button id="reindexBtn" class="ghost-btn">Rebuild knowledge base index</button>
+        <div id="reindexStatus" class="fine-print"></div>
+      </aside>
+
+      <section class="chat-column">
+        <div id="chatWindow" class="chat-window">
+          <div class="msg assistant">
+            <div class="bubble">
+              Welcome — ask me anything about NCERT Commerce (Accountancy or Business Studies), or type <code>:modes</code> to see how I can structure my answers.
+            </div>
+          </div>
+        </div>
+
+        <form id="chatForm" class="chat-input-row">
+          <input id="chatInput" type="text" autocomplete="off"
+                 placeholder="Ask about journal entries, partnership accounts, forms of business…" />
+          <button type="submit">Ask</button>
+        </form>
+      </section>
+
+    </main>
+
+    <footer class="ledger-footer">
+      <span>Knowledge base: NCERT-style Commerce notes (curated, offline)</span>
+      <span id="latencyFoot"></span>
+    </footer>
+  </div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
