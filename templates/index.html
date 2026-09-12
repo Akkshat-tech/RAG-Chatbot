@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Inquiry-Based Commerce Mentor (RAG)</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 760px; margin: 40px auto; background:#f7f7f8; color:#222; }
+  h1 { font-size: 1.4rem; }
+  .toggle { margin: 16px 0; }
+  .toggle button { padding: 8px 16px; border: 1px solid #999; background:#fff; cursor:pointer; border-radius: 6px; margin-right:8px; }
+  .toggle button.active { background:#2b6cb0; color:#fff; border-color:#2b6cb0; }
+  textarea { width:100%; padding:10px; font-size:1rem; border-radius:6px; border:1px solid #ccc; }
+  button#askBtn { margin-top:10px; padding:10px 20px; background:#2b6cb0; color:#fff; border:none; border-radius:6px; cursor:pointer; }
+  .answer { background:#fff; border:1px solid #ddd; border-radius:8px; padding:16px; margin-top:20px; white-space:pre-wrap; }
+  .sources { margin-top:10px; font-size:0.85rem; color:#555; }
+  .sources ul { padding-left:20px; }
+  .loading { color:#888; font-style:italic; }
+</style>
+</head>
+<body>
+  <h1>📘 Inquiry-Based Commerce Mentor</h1>
+  <p>Grounded in NCERT Class 11-12 Commerce (Business Studies / Accountancy / Economics).</p>
+
+  <div class="toggle">
+    <button id="tocdBtn" class="active" onclick="setMode('tocd')">TOCD Prompt</button>
+    <button id="rtaoBtn" onclick="setMode('rtao')">RTAO Prompt</button>
+  </div>
+
+  <textarea id="query" rows="3" placeholder="Ask a Commerce question, e.g. 'What is the difference between a public and private company?'"></textarea>
+  <br>
+  <button id="askBtn" onclick="ask()">Ask</button>
+
+  <div id="result"></div>
+
+<script>
+let mode = "tocd";
+
+function setMode(m) {
+  mode = m;
+  document.getElementById("tocdBtn").classList.toggle("active", m === "tocd");
+  document.getElementById("rtaoBtn").classList.toggle("active", m === "rtao");
+}
+
+async function ask() {
+  const query = document.getElementById("query").value.trim();
+  const resultDiv = document.getElementById("result");
+  if (!query) return;
+
+  resultDiv.innerHTML = '<p class="loading">Retrieving context and generating answer...</p>';
+
+  try {
+    const res = await fetch("/api/ask", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ query, mode })
+    });
+    const data = await res.json();
+
+    if (data.error) {
+      resultDiv.innerHTML = `<p style="color:red">Error: ${data.error}</p>`;
+      return;
+    }
+
+    let sourcesHtml = "<ul>";
+    data.sources.forEach(s => {
+      sourcesHtml += `<li>${s.source}${s.page ? ", p." + s.page : ""} (similarity: ${s.score})</li>`;
+    });
+    sourcesHtml += "</ul>";
+
+    resultDiv.innerHTML = `
+      <div class="answer">${data.answer}</div>
+      <div class="sources"><strong>Mode:</strong> ${data.mode.toUpperCase()}<br>
+      <strong>Retrieved sources:</strong>${sourcesHtml}</div>
+    `;
+  } catch (err) {
+    resultDiv.innerHTML = `<p style="color:red">Request failed: ${err}</p>`;
+  }
+}
+</script>
+</body>
+</html>
