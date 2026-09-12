@@ -1,0 +1,41 @@
+Company Accounts (Class 12)
+
+A company is an artificial legal person, created by law, having a separate
+legal identity from its members (shareholders), perpetual succession, and
+limited liability for its members (a shareholder's loss is generally limited
+to the amount unpaid on the shares they hold).
+
+Share capital represents the capital raised by a company by issuing shares.
+Authorised capital is the maximum capital a company is permitted to raise, as
+stated in its memorandum of association. Issued capital is the part of the
+authorised capital actually offered to the public/subscribers. Subscribed
+capital is the part of the issued capital that investors have actually agreed
+to take up, and Called-up capital is the part of the subscribed capital that
+the company has asked shareholders to pay so far. Shares can be issued at
+par (at face value), at a premium (above face value, credited to a Securities
+Premium account, which has restricted uses under law), or, in limited cases,
+at a discount.
+
+When shares are issued, a company usually collects money in instalments:
+Application money (with the application form), Allotment money (once shares
+are allotted), and one or more Call money instalments. If a shareholder fails
+to pay a call when due, the shares may eventually be forfeited, meaning the
+company cancels the shareholder's membership and can reissue those shares to
+someone else; any amount forfeited is transferred to a Capital Reserve
+(subject to conditions) if the shares are reissued at a profit or at a price
+that, combined with the forfeited amount, is not less than the face value.
+
+Debentures are a form of long-term debt/borrowing, not share capital -- a
+debenture holder is a creditor of the company, not an owner, and is entitled
+to a fixed rate of interest regardless of whether the company earns a profit.
+Debentures may be secured (backed by a charge on company assets) or unsecured,
+and may be redeemable (repayable after a fixed period) or, in principle,
+irredeemable/perpetual.
+
+Companies commonly prepare their financial statements in a "Schedule III"
+(as per the Companies Act) format for the Balance Sheet and Statement of
+Profit and Loss, which prescribes a specific classification of items (for
+example, Shareholders' Funds, Non-Current Liabilities, Current Liabilities on
+the equity-and-liabilities side, and Non-Current Assets, Current Assets on
+the assets side), rather than the simpler format used for sole
+proprietorships and partnerships.

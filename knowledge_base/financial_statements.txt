@@ -1,0 +1,54 @@
+Financial Statements
+
+Financial statements are the formal, structured reports prepared at the end of
+an accounting period (usually a year) that summarise a business's financial
+performance and financial position. For a trading/manufacturing business the
+core statements taught at the school level are the Trading Account, the
+Profit and Loss Account, and the Balance Sheet.
+
+The Trading Account shows whether the buying and selling of goods, during the
+period, resulted in a gross profit or a gross loss. It compares net sales
+against the cost of goods sold (opening stock plus net purchases plus direct
+expenses, minus closing stock). The resulting figure, gross profit or gross
+loss, is carried forward to the Profit and Loss Account.
+
+The Profit and Loss Account starts from the gross profit (or loss) and
+further deducts indirect/operating expenses (such as salaries, rent,
+depreciation, interest paid) and adds indirect incomes (such as interest
+received, commission received), arriving at the net profit or net loss for
+the period. Net profit increases the owner's capital; a net loss reduces it.
+
+The Balance Sheet is a statement, prepared as on a particular date (not for a
+period), showing the assets, liabilities and capital of the business. It is
+based on the accounting equation: Assets = Liabilities + Capital. Assets are
+listed either in order of liquidity or in order of permanence, depending on
+the format followed; common asset categories are fixed assets (land,
+building, machinery, furniture), and current assets (cash, bank, debtors,
+closing stock). Liabilities are split into long-term liabilities (such as
+long-term loans) and current liabilities (such as creditors, bills payable,
+outstanding expenses).
+
+Financial Statement Analysis (a Class 12 topic) uses techniques such as
+comparative statements, common-size statements, ratio analysis, and cash flow
+statements to interpret the financial statements more deeply -- for example,
+to judge liquidity, solvency, profitability and efficiency.
+
+Ratio Analysis expresses a relationship between two accounting figures.
+Commonly taught ratios include: the Current Ratio (current assets divided by
+current liabilities, a measure of short-term liquidity, with 2:1 traditionally
+considered a satisfactory benchmark); the Quick Ratio (liquid assets, i.e.
+current assets excluding stock and prepaid expenses, divided by current
+liabilities, a stricter liquidity measure, with 1:1 often taken as a
+satisfactory benchmark); the Debt-Equity Ratio (a solvency measure comparing
+long-term debt to shareholders' funds); and the Gross Profit Ratio and Net
+Profit Ratio (profitability measures expressing gross/net profit as a
+percentage of net sales).
+
+A Cash Flow Statement classifies cash inflows and outflows during a period
+into three activities: Operating Activities (cash effects of the core revenue-
+generating operations), Investing Activities (cash effects of buying/selling
+fixed assets and investments), and Financing Activities (cash effects of
+changes in the size and composition of owners' capital and borrowings, such
+as issuing shares or repaying a loan). It helps users understand a company's
+ability to generate cash, which the Profit and Loss Account alone does not
+directly show.

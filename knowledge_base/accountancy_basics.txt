@@ -1,0 +1,48 @@
+Accountancy Fundamentals (Class 11)
+
+Book keeping is the process of recording, in a systematic manner, the monetary
+transactions of a business in the books of account maintained for the purpose.
+Accounting goes a step further: it involves recording, classifying and
+summarising transactions, and then interpreting the results so that owners,
+managers, lenders and regulators can make informed decisions.
+
+The accounting cycle followed by most businesses is: identify a transaction,
+record it as a journal entry, post the entry to the relevant ledger accounts,
+balance the ledger accounts, prepare a trial balance, and finally prepare the
+financial statements (trading account, profit and loss account, and balance
+sheet).
+
+A journal entry records a transaction using the double-entry principle: every
+transaction affects at least two accounts, one of which is debited and the
+other credited, such that total debits always equal total credits for that
+entry. For example, when a business buys furniture for cash, the Furniture
+account is debited (an asset increases) and the Cash account is credited (an
+asset decreases).
+
+A ledger is a set of accounts to which journal entries are posted. Each ledger
+account has a debit side and a credit side; the difference between the two
+sides, at any point, is called the balance of that account. Asset and expense
+accounts normally carry debit balances; liability, capital and revenue
+accounts normally carry credit balances.
+
+A trial balance is a statement, prepared on a particular date, listing the
+debit and credit balances of all ledger accounts. If the double-entry
+principle has been followed correctly, the total of the debit column should
+equal the total of the credit column. A matching trial balance does not
+guarantee there are no errors (for example, an entry omitted entirely, or
+posted to the wrong account of the correct type, will not be caught by the
+trial balance), but a mismatch definitely indicates an error somewhere.
+
+Depreciation is the systematic allocation of the cost of a fixed asset (such
+as machinery or a vehicle) over its useful life, reflecting wear and tear or
+obsolescence. The two most commonly taught methods are the Straight Line
+Method, where an equal amount of depreciation is charged every year, and the
+Written Down Value (Reducing Balance) Method, where depreciation is charged
+as a fixed percentage of the asset's remaining book value each year, so the
+depreciation amount reduces over time.
+
+A bill of exchange is a written, unconditional order signed by the maker (the
+drawer), directing a certain person (the drawee) to pay a certain sum of
+money, on demand or at a fixed or determinable future date, to a specified
+person or to the bearer. It is commonly used in credit transactions between a
+seller and a buyer to formalise the buyer's promise to pay on a future date.

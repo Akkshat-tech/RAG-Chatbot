@@ -1,0 +1,107 @@
+<svg viewBox="0 0 1200 560" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1F4D3D"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="560" fill="#F1ECDD"/>
+  <text x="600" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#163A2E">
+    Inquiry-Based Commerce Mentor — RAG Architecture
+  </text>
+
+  <!-- Row 1: user-facing path -->
+  <g font-size="13">
+    <!-- User -->
+    <rect x="30" y="80" width="150" height="70" rx="6" fill="#1F4D3D"/>
+    <text x="105" y="110" text-anchor="middle" fill="#F1ECDD" font-weight="600">User</text>
+    <text x="105" y="130" text-anchor="middle" fill="#CFE3D9">Commerce student</text>
+
+    <!-- Web UI -->
+    <rect x="220" y="80" width="170" height="70" rx="6" fill="#FBF8EF" stroke="#1F4D3D" stroke-width="1.5"/>
+    <text x="305" y="105" text-anchor="middle" font-weight="600">Web Interface</text>
+    <text x="305" y="123" text-anchor="middle" fill="#4A5A4E">HTML / CSS / JS</text>
+    <text x="305" y="139" text-anchor="middle" fill="#4A5A4E">(fetch → /chat)</text>
+
+    <!-- Backend API -->
+    <rect x="430" y="80" width="190" height="70" rx="6" fill="#FBF8EF" stroke="#1F4D3D" stroke-width="1.5"/>
+    <text x="525" y="105" text-anchor="middle" font-weight="600">Backend API</text>
+    <text x="525" y="123" text-anchor="middle" fill="#4A5A4E">FastAPI (app.py)</text>
+    <text x="525" y="139" text-anchor="middle" fill="#4A5A4E">rag_engine.py</text>
+
+    <!-- Query processing / wrappers -->
+    <rect x="660" y="80" width="230" height="70" rx="6" fill="#FBF8EF" stroke="#1F4D3D" stroke-width="1.5"/>
+    <text x="775" y="100" text-anchor="middle" font-weight="600">Query Processing</text>
+    <text x="775" y="118" text-anchor="middle" fill="#4A5A4E">wrappers.py: mode switch,</text>
+    <text x="775" y="134" text-anchor="middle" fill="#4A5A4E">domain guard, ambiguity check</text>
+
+    <!-- Response -->
+    <rect x="930" y="80" width="150" height="70" rx="6" fill="#1F4D3D"/>
+    <text x="1005" y="110" text-anchor="middle" fill="#F1ECDD" font-weight="600">Response</text>
+    <text x="1005" y="130" text-anchor="middle" fill="#CFE3D9">answer + sources</text>
+
+    <line x1="180" y1="115" x2="218" y2="115" stroke="#1F4D3D" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="390" y1="115" x2="428" y2="115" stroke="#1F4D3D" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="620" y1="115" x2="658" y2="115" stroke="#1F4D3D" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="890" y1="115" x2="928" y2="115" stroke="#1F4D3D" stroke-width="2" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- Vertical connectors down to retrieval row -->
+  <line x1="775" y1="150" x2="775" y2="220" stroke="#1F4D3D" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="1005" y1="150" x2="1005" y2="220" stroke="#8C3B2E" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="4 3"/>
+
+  <!-- Row 2: retrieval + generation -->
+  <g font-size="13">
+    <!-- Embedding model -->
+    <rect x="480" y="220" width="190" height="70" rx="6" fill="#FBF8EF" stroke="#A87C1F" stroke-width="1.5"/>
+    <text x="575" y="245" text-anchor="middle" font-weight="600">Embedding Model</text>
+    <text x="575" y="263" text-anchor="middle" fill="#4A5A4E">Ollama: nomic-embed-text</text>
+    <text x="575" y="279" text-anchor="middle" fill="#4A5A4E">(cached, ollama_client.py)</text>
+
+    <line x1="680" y1="255" x2="770" y2="255" stroke="#1F4D3D" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Vector DB -->
+    <rect x="770" y="220" width="190" height="70" rx="6" fill="#FBF8EF" stroke="#A87C1F" stroke-width="1.5"/>
+    <text x="865" y="245" text-anchor="middle" font-weight="600">Vector Database</text>
+    <text x="865" y="263" text-anchor="middle" fill="#4A5A4E">ChromaDB (persistent)</text>
+    <text x="865" y="279" text-anchor="middle" fill="#4A5A4E">cosine similarity top-k</text>
+
+    <line x1="775" y1="220" x2="775" y2="150" stroke="#1F4D3D" stroke-width="2" stroke-dasharray="2 2"/>
+  </g>
+
+  <line x1="865" y1="290" x2="865" y2="350" stroke="#1F4D3D" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Row 3: retrieved context -> LLM -->
+  <g font-size="13">
+    <rect x="480" y="350" width="270" height="80" rx="6" fill="#FBF8EF" stroke="#1F4D3D" stroke-width="1.5"/>
+    <text x="615" y="376" text-anchor="middle" font-weight="600">Retrieved Context</text>
+    <text x="615" y="394" text-anchor="middle" fill="#4A5A4E">top-k chunks + source metadata</text>
+    <text x="615" y="410" text-anchor="middle" fill="#4A5A4E">(filtered by relevance floor)</text>
+
+    <line x1="750" y1="390" x2="800" y2="390" stroke="#1F4D3D" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="800" y="350" width="260" height="80" rx="6" fill="#1F4D3D"/>
+    <text x="930" y="376" text-anchor="middle" fill="#F1ECDD" font-weight="600">LLM (Generation)</text>
+    <text x="930" y="394" text-anchor="middle" fill="#CFE3D9">Ollama: llama3.1:8b</text>
+    <text x="930" y="410" text-anchor="middle" fill="#CFE3D9">TOCD / RTAO / Ultimate prompt</text>
+
+    <line x1="865" y1="350" x2="865" y2="300" stroke="#1F4D3D" stroke-width="2" stroke-dasharray="2 2"/>
+  </g>
+
+  <line x1="930" y1="430" x2="930" y2="470" stroke="#1F4D3D" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="930" y1="470" x2="1005" y2="470" stroke="#1F4D3D" stroke-width="2"/>
+  <line x1="1005" y1="470" x2="1005" y2="152" stroke="#8C3B2E" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="4 3"/>
+
+  <!-- Row 4: post-processing wrappers -->
+  <g font-size="13">
+    <rect x="30" y="460" width="400" height="70" rx="6" fill="#FBF8EF" stroke="#8C3B2E" stroke-width="1.5"/>
+    <text x="230" y="484" text-anchor="middle" font-weight="600">Post-Generation Wrappers</text>
+    <text x="230" y="502" text-anchor="middle" fill="#4A5A4E">groundedness / hallucination check,</text>
+    <text x="230" y="518" text-anchor="middle" fill="#4A5A4E">personalization note, source display</text>
+    <line x1="430" y1="495" x2="800" y2="495" stroke="#8C3B2E" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+    <line x1="800" y1="495" x2="800" y2="390" stroke="#8C3B2E" stroke-width="2" stroke-dasharray="4 3"/>
+  </g>
+
+  <text x="600" y="552" text-anchor="middle" font-size="11" fill="#4A5A4E">
+    Solid arrows: main request/response flow. Dashed arrows: verification / return paths.
+  </text>
+</svg>
