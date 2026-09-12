@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 fastapi>=0.110
 uvicorn[standard]>=0.29
 chromadb>=0.5
 requests>=2.31
 pydantic>=2.6
 python-multipart>=0.0.9
+=======
+flask
+requests
+numpy
+pypdf
+>>>>>>> 941d463eb875b5dce394c8551cf9d5b131bb3ab9

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Inquiry-Based Commerce Mentor — RAG Prototype
 
 A Retrieval-Augmented Generation tutor for NCERT Class 11/12 Commerce
@@ -113,3 +114,63 @@ mocked model — regenerate the real one before submitting.
   still be slow — GPU acceleration or a smaller model will help.
 - `MIN_RELEVANCE_SCORE` in `config.py` may need tuning once you swap in your
   own knowledge base or embedding model.
+=======
+# CSC530 Monsoon 2026 — Group 4
+
+## Inquiry-Based Commerce Mentor
+
+This repository is the official project repository for **Group 4** of **CSC530 — Monsoon 2026**.
+
+### Project
+
+**Inquiry-Based Commerce Mentor**
+
+This repository contains the group's work, documentation, implementation, experiments, and final deliverables for the project.
+
+### Repository Purpose
+
+This repository serves as the central workspace for the group throughout the course.
+
+It may contain:
+
+- Project documentation
+- Source code and implementation
+- Research and supporting material
+- Experiments and iterations
+- Project deliverables
+- Presentation and demonstration material
+- Final submission material
+
+### Group
+
+**Group 4**
+
+Repository access is managed through the **CSC530-Monsoon2026** GitHub organization and the **Group 4** team.
+
+### Working Guidelines
+
+- Keep project work organized and clearly documented.
+- Use meaningful commit messages.
+- Keep the repository structure clean.
+- Document important decisions and changes.
+- Do not commit passwords, API keys, tokens, or other secrets.
+- Follow the submission requirements and instructions provided during the course.
+
+### Repository Structure
+
+The repository structure may evolve as the project develops.
+
+```text
+.
+├── README.md
+├── docs/
+├── src/
+└── ...
+```
+
+---
+
+**CSC530 — Monsoon 2026**  
+**Ahmedabad University**
+>>>>>>> 1245f74ab5291f5233d448b6710f29458844811e
+>>>>>>> 941d463eb875b5dce394c8551cf9d5b131bb3ab9
