@@ -1,4 +1,4 @@
-# Inquiry-Based Commerce Mentor — RAG Prototype
+# Inquiry-Based Commerce Mentor: RAG Prototype
 
 A Retrieval-Augmented Generation tutor for NCERT Class 11/12 Commerce
 (Accountancy + Business Studies), built for the "Design and Develop a
