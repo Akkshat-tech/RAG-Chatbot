@@ -89,6 +89,34 @@ Example: `:tocd what is depreciation?`
 | Web UI, source/grounding display | `static/`, `app.py` |
 | Evaluation harness (15 test questions across 4 categories) | `eval/test_questions.json`, `eval/run_eval.py` |
 
+## Prompt Contextualization (`:context` / `:nocontext`)
+* Branch
+Implements the *Prompt Contextualization* pattern (CSC530, session S8): an initial,
+generic query is turned into a contextualized query before retrieval and generation.
+
+**Usage**
+- `:context` turns it ON for the session; `:nocontext` turns it OFF (default: OFF).
+- Works with every mode. Try: `what is accounting?` then `why is it important?`.
+
+**What it does** (`contextualization.py`, rule-based, no extra LLM call)
+| Framework (from lecture) | Role in the pipeline |
+|---|---|
+| Five Ws (and How) | Detects which facets the question asks about |
+| Bloom's Taxonomy | Detects cognitive level (Remember ... Create) and shapes answer depth |
+| Rhetorical Triangle | Speaker (Mentor), audience (student profile), message intent |
+| Conversation context | Resolves short follow-ups against the previous question |
+
+**Pipeline changes (`rag_engine.py`)**
+1. Retrieval uses the contextualized query (e.g. `what is accounting? why is it important?`).
+2. The context-relevance check verifies the *topic* (previous question) for follow-ups,
+   since generic words like "important" say nothing about topic coverage.
+3. A context block (audience, Bloom level, facets) is appended to the system prompt.
+4. Contextualized requests skip the response cache, since they depend on chat history.
+
+**Seeing it work:** with `:context` ON, the server terminal prints a
+`[CONTEXTUALIZATION]` block showing the original query, the retrieval query,
+whether a follow-up was resolved, the Bloom level and the audience.
+
 ## 7. Running the evaluation
 
 Once `ingest.py` has been run and Ollama is up:
